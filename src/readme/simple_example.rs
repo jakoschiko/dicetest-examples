@@ -1,6 +1,6 @@
 //! A simple example that shows how to Dicetest.
 
-/// A sort function that contains a bug.
+/// A sorting function that contains a bug.
 pub fn bubble_sort<T: Ord>(slice: &mut [T]) {
     let len = slice.len();
 
