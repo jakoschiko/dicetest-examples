@@ -3,3 +3,5 @@
 //! [Dicetest]: https://crates.io/crates/dicetest
 
 pub mod readme;
+
+pub mod guide;

@@ -1,4 +1,4 @@
-//! A simple example that shows how to Dicetest.
+//! A simple example that shows how to use Dicetest.
 
 /// A sorting function that contains a bug.
 pub fn bubble_sort<T: Ord>(slice: &mut [T]) {
