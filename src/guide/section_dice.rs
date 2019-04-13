@@ -30,7 +30,7 @@ pub fn die() {
     // It chooses one of the `String`s by cloning them.
     let xx_or_yy_die = dice::one_of_2(xx, yy);
 
-    // This generator uses `xx_or_yy_die` three times.
+    // This generator uses `xx_or_yy_die` to generate three `String`s at once.
     let three_xx_or_yy_die = dice::array_3(xx_or_yy_die);
 
     for _ in 0..4 {
@@ -65,7 +65,7 @@ pub fn implement_and_compose() {
     let non_zero_die = dice::u8(1..).map(NonZeroU8);
 
     // Generates permutations of `(0..=n)` for an arbitrary `n`.
-    let permutations = dice::size(0..).flat_map(|n| {
+    let permutations_die = dice::size(0..).flat_map(|n| {
         let vec = (0..=n).collect::<Vec<_>>();
         dice::shuffled_vec(vec)
     });
