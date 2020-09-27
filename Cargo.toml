@@ -2,12 +2,8 @@
 name = "dicetest_examples"
 version = "0.1.0"
 authors = ["Jakob Schikowski"]
-license = "MIT/Apache-2.0"
+license = "MIT OR Apache-2.0"
 readme = "README.md"
 description = "A collection of examples for Dicetest"
-keywords = ["dicetest"]
 repository = "https://github.com/jakoschiko/dicetest_examples"
 edition = "2018"
-
-[dependencies]
-dicetest = "0.1.0"
